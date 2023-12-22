@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --nav-top:#DD127B;
+    --nav-bottom:#F8F9FA;
+    --bg-running:#E2E2E2;
+    --bg-run1:#FFC107;
+    --bg-run2:#198754;
+    --bg-run3:#0DCAF0;
+    --bg-run4:#0D6EFD;
+    --bg-run5:#6C757D;
+    --footer-color:#212529;
+    --text-white:#fff;
+    --color-black:#000000E6;
+    --color-gallery:#87CEEB;
+}
+.ptb-40{ 
+    padding-top: 40px; 
+    padding-bottom: 50px;
+}
+p{ 
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 0.4px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--nav-top);
+}
+h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Index Page CSS Start */
+/* Top-head Section Start */
+.top-head{
+    width: 100%;
+    height: 30px;
+    background: var(--nav-top);
+    color: var(--text-white);
+}
+.top-head a{
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--text-white);
+}
+.top-head a:hover{
+    color: var(--bg-run4);
+    transform: scale(1.05);
+    transition: 0.2s linear;
+}
+.top-head .top-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.top-head span{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* /Top-head Section Start */
+
+/* Main-Nav Section Start */
+.navbar{ background: var(--nav-bottom);}
+.navbar .img-lg{
+    width: 270px;
+    height: 55px;
+}
+.navbar .navbar-brand .img-sm,
+.navbar .navbar-brand .img-lg{
+    transition: 0.2s linear;
+}
+.navbar .navbar-brand .img-lg:hover{
+    transform: scale(1.05);
+    transition: 0.2s linear;
+}
+.navbar .navbar-brand .img-sm:hover{
+    transform: scale(1.05);
+    transition: 0.2s linear;
+}
+.navbar ul li a{
+    font-size: 16px;
+    color: var(--color-black);
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    transition: 0.5s linear;
+}
+.navbar ul li .dropdown-item:hover,
+.navbar ul li a:hover{
+    color: var(--nav-top);
+    background: none;
+    transform: scale(1.05);
+    transition: 0.2s linear;
+}
+.navbar .dropdown-item{
+    padding: 2px 10px;
+    font-size: 15px;
+}
+/* /Main-Nav Section Start */
+
+/* Banner Section Start */
+.banner{
+    width: 100%;
+    overflow-x: hidden;
+}
+.banner .banner-heading{
+    top: 130px;
+    left: 140px;
+}
+.banner .banner-heading h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--nav-top);
+}
+.banner .banner-heading span{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--nav-top);
+}
+.banner .banner-heading .btn{
+    width: 140px;
+    border-radius: 20px;
+    color: var(--text-white);
+    font-weight: 600;
+    background: var(--bg-run3);
+}
+/* /Banner Section Start */
+
+/* Marquee Section Start */
+/* marquee{
+    color: #212529;
+   
+} */
+/* Marquee Section End */
+
+/*  Welcome Section Start */
+/* / Welcome Section Start */
+
+/* Running-Courses Section Start */
+.courses{
+    width: 100%;
+    height: auto;
+    background: var(--bg-running);
+}
+.courses .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
+    width: 95%;
+    height: 150px;
+    border-radius: 10px;
+}
+.courses .c-name{
+    text-align: center;
+    padding-top: 110px;
+}
+.courses .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .c-name a{
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 20px;
+}
+.courses .box1, .box7{
+    background: var(--bg-run1);
+}
+.courses .box2, .box8{
+    background: var(--bg-run2);
+}
+.courses .box3, .box9{
+    background: var(--bg-run3);
+}
+.courses .box4{
+    background: var(--bg-run4);
+}
+.courses .box5{
+    background: var(--bg-run5);
+}
+.courses .box6{
+    background: var(--footer-color);
+}
+/* /Running-Courses Section Start */
+
+/* Call-Back Form Section Start */
+.call-back .btn{
+    padding: 10px 80px;
+}
+.call-back .form-left ul li{
+   margin-right: 10px;
+   margin-bottom: 2px;
+   font-size: 14px;
+   color: var(--footer-color);
+}
+/* .call-back .form-left .bg-hover:hover{
+    color: var(--bg-run4);
+} */
+.call-back .form-left span{
+    color: #212529;
+    font-weight: 600;
+    font-size: 20px;
+}
+.call-back .form-right, .form-left{
+    border-radius: 20px;
+    border-top: 4px solid var(--bg-run4);
+    border-bottom: 4px solid var(--bg-run4);
+}
+.call-back .form-right select,
+.call-back .form-right input{
+    border-radius: 15px;
+    height: 43px;
+    font-size: 15px;
+}
+.call-back .form-right textarea{
+    border-radius: 25px;
+}
+/* /Call-Back Form Section Start */
+
+/* Footer Section Start */
+footer{
+    background: var(--footer-color);
+}
+footer .social-icon ul li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--bg-run4);
+    margin-right: 20px;
+    position: relative;
+}
+footer .social-icon ul li a{
+    color: var(--text-white);
+    position: absolute;
+    top: 3px;
+    left: 8px
+}
+/* .footer .social-icon ul li a:hover{
+    color: var(--nav-top);
+}
+.footer .social-icon li:hover{
+    transform: scale(1.05);
+    transition: 0.2s linear;
+} */
+footer .important ul li a,
+footer .quick ul li a{
+    color: var(--text-white);
+}
+footer .important ul li a:hover,
+footer .quick ul li a:hover{
+    color: var(--nav-top);
+    background: none;
+    transition: 0.2s linear;
+}
+footer hr{
+    display: block;
+    height: 2px;
+    border-top: 2px solid var(--text-white);
+    margin: 1em 0;
+    padding: 0;
+}
+footer .last-footer a:hover{
+    color: var(--nav-top);
+    transition: 0.2s linear;
+}
+/* /Footer Section Start */
+/* /Index Page CSS End */
+
+/* Gallery Page CSS Start */
+.gallery{
+    background: var(--color-gallery);
+}
+.gallery .row{
+    margin-bottom: 13px;
+}
+.gallery .overflow-hidden{
+    border: 9px solid var(--text-white);
+}
+.gallery .img-fluid{
+    width: 100%;
+    height: 220px;
+}
+.gallery .img-fluid:hover{
+    transform: scale(1.09);
+    transition: 0.3s ease-in-out;
+}
+/* /Gallery Page CSS End */
+
+/* Search-Registration Page CSS Start*/
+.search .container{
+    width: 40%;
+}
+.search .btn{
+    border: none;
+}
+.search .btn-danger{
+    background: var(--nav-top);
+}
+.search .btn-danger:hover{
+    background: var(--footer-color);
+}
+/* /Search-Registration Page CSS End */
+
+/* Media Query Start */
+@media (max-width: 320px){
+    .banner{
+        display: none;
+    }
+    footer .social-icon ul li{
+        width: 30px;
+        height: 30px;
+    }
+    footer .social-icon ul li a{
+        top: 2px;
+        left: 9px;
+    }
+    .search .btn{
+        margin-bottom: 8px;
+    }
+}
+@media (max-width: 575.98px){
+    .top-head{
+        display: none;
+    }
+    .banner .banner-heading h1{
+        font-size: 33px;
+    }
+    .banner .banner-heading span{
+        font-size: 15px;
+    }
+    .banner .banner-heading .btn{
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        background: var(--bg-run3);
+    }
+    .gallery .img-fluid{
+        margin-bottom: 10px;
+    }
+    .gallery .row{
+        margin-bottom: 3px;
+    }
+}
+@media (max-width: 767.98) {
+    .top-head a{
+       display: none;
+    }
+    .banner .banner-heading{
+        top: 15px;
+        left: 30px;
+    }
+    .banner .banner-heading h1{
+        font-size: 25px;
+    }
+    .courses .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
+        margin-bottom: 15px;
+    }
+    .call-back .form-left{
+        margin-bottom: 20px;
+    }
+    .call-back .form-right input{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 991.98px) {
+    .banner .banner-heading{
+        top: 50px;
+        left: 70px;
+    }
+    .courses .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
+        margin-bottom: 20px;
+    }
+    .call-back .form-left{
+        margin-bottom: 20px;
+    }
+    .gallery .img-fluid{
+        margin-bottom: 10px;
+    }
+    .gallery .row{
+        margin-bottom: 3px;
+    }
+    .search .container{
+        width: 60%;
+    }
+}
+@media (max-width: 1440px) {
+    .courses .row{
+        margin-bottom: 10px;
+    }
+}
+/* /Media Query End */
